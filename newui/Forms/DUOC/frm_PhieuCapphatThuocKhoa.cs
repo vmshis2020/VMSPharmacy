@@ -80,7 +80,7 @@ namespace VNS.HIS.UI.THUOC
                                              chkByDate.Checked ? dtToDate.Value.ToString("dd/MM/yyyy") : "01/01/1900",-1, Utility.Int32Dbnull(cboKhoaLinh.SelectedValue, -1), 
                                              Utility.Int32Dbnull(cboKhonhan.SelectedValue, -1),
                                              Utility.Int32Dbnull(cboKhoxuat.SelectedValue, -1), Utility.Int32Dbnull(cboNhanVien.SelectedValue, -1),
-                                             -1, "ALL", Utility.sDbnull(txtSoPhieu.Text), TRANG_THAI, (int)LoaiPhieu.PhieuXuatKhoa, MaKho, KIEU_THUOC_VT);
+                                             -1, "ALL", Utility.sDbnull(txtSoPhieu.Text), TRANG_THAI, (int)LoaiPhieu.PhieuXuatKhoa, MaKho,2, KIEU_THUOC_VT);
 
             Utility.SetDataSourceForDataGridEx_Basic(grdList, m_dtDataNhapKho, true, true, "1=1", "");
             if (!Utility.isValidGrid(grdList)) if (m_dtDataPhieuChiTiet != null) m_dtDataPhieuChiTiet.Clear();
@@ -171,7 +171,7 @@ namespace VNS.HIS.UI.THUOC
         private void frm_PhieuCapphatThuocTonghop_Load(object sender, EventArgs e)
         {
             cmdConfig.Visible = globalVariables.IsAdmin;
-            IntialData();
+            InitData();
             TIMKIEM_THONGTIN();
             ModifyCommand();
         }
@@ -179,7 +179,7 @@ namespace VNS.HIS.UI.THUOC
         /// <summary>
         /// hàm thực hiện việc khởi tạo thông tin của Form
         /// </summary>
-        private void IntialData()
+        private void InitData()
         {
             m_KhoaLinh = THU_VIEN_CHUNG.Laydanhmuckhoa("NOI",0);
             if (KIEU_THUOC_VT == "THUOC")

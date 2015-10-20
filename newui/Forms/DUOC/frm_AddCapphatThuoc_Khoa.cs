@@ -123,7 +123,7 @@ namespace VNS.HIS.UI.THUOC
                 //}
             }
         }
-        private void InitalData()
+        private void InitData()
         {
             m_KhoaLinh = THU_VIEN_CHUNG.Laydanhmuckhoa("NOI", 0);
             DataBinding.BindDataCombobox(cboNhanVien, CommonLoadDuoc.LAYTHONGTIN_NHANVIEN(),
@@ -200,7 +200,7 @@ namespace VNS.HIS.UI.THUOC
         }
         private void frm_AddCapphatThuoc_Khoa_Load(object sender, EventArgs e)
         {
-            InitalData();
+            InitData();
             getData();
             ModifyCommand();
             b_Hasloaded = true;

@@ -67,7 +67,7 @@ namespace VNS.HIS.UI.THUOC
         /// <param name="e"></param>
         private void frm_PhieuNhapKho_Load(object sender, EventArgs e)
         {
-            IntialData();
+            InitData();
             TIMKIEM_THONGTIN();
             b_Hasloaded = true;
             ModifyCommand();
@@ -77,7 +77,7 @@ namespace VNS.HIS.UI.THUOC
         /// <summary>
         /// hàm thực hiện việc khởi tạo thông tin của Form
         /// </summary>
-        private void IntialData()
+        private void InitData()
         {
             txtNhacungcap.Init();
 
@@ -153,7 +153,7 @@ namespace VNS.HIS.UI.THUOC
                                              chkByDate.Checked ? dtToDate.Value.ToString("dd/MM/yyyy") : "01/01/1900",-1, -1,
                                              Utility.Int32Dbnull(cboKhoThuoc.SelectedValue, -1), -1,
                                              Utility.Int32Dbnull(cboNhanVien.SelectedValue, -1),
-                                             -1, manhacungcap, Utility.sDbnull(txtSoPhieu.Text), TRANG_THAI, (int)LoaiPhieu.PhieuNhapKho, MaKho, KIEU_THUOC_VT);
+                                             -1, manhacungcap, Utility.sDbnull(txtSoPhieu.Text), TRANG_THAI, (int)LoaiPhieu.PhieuNhapKho, MaKho, 2, KIEU_THUOC_VT);
 
             Utility.SetDataSourceForDataGridEx_Basic(grdList,m_dtDataNhapKho,true,true,"1=1","");
             if (!Utility.isValidGrid(grdList)) if (m_dtDataPhieuChiTiet != null) m_dtDataPhieuChiTiet.Clear();

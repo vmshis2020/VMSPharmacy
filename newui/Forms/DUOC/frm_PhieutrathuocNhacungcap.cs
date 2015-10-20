@@ -129,7 +129,7 @@ namespace VNS.HIS.UI.THUOC
                                              chkByDate.Checked ? dtToDate.Value.ToString("dd/MM/yyyy") :"01/01/1900",-1, -1,
                                              -1, Utility.Int32Dbnull(cboKhoXuat.SelectedValue, -1),
                                              Utility.Int32Dbnull(cboNhanVien.SelectedValue, -1),
-                                             -1, txtNhacungcap.myCode , Utility.sDbnull(txtSoPhieu.Text), TRANG_THAI, (int)LoaiPhieu.PhieuTraNCC, MaKho, KIEU_THUOC_VT);
+                                             -1, txtNhacungcap.myCode, Utility.sDbnull(txtSoPhieu.Text), TRANG_THAI, (int)LoaiPhieu.PhieuTraNCC, MaKho, 2, KIEU_THUOC_VT);
 
             Utility.SetDataSourceForDataGridEx(grdList, m_dtDataNhapKho, true, true, "1=1", "");
             Utility.SetGridEXSortKey(grdList, TPhieuNhapxuatthuoc.Columns.IdPhieu,
@@ -214,7 +214,7 @@ namespace VNS.HIS.UI.THUOC
 
         private void frm_PhieutrathuocNhacungcap_Load(object sender, EventArgs e)
         {
-            IntialData();
+            InitData();
             TIMKIEM_THONGTIN();
             ModifyCommand();
             cmdCauHinh.Visible = globalVariables.IsAdmin;
@@ -223,7 +223,7 @@ namespace VNS.HIS.UI.THUOC
         /// <summary>
         /// hàm thực hiện việc khởi tạo thông tin của Form
         /// </summary>
-        private void IntialData()
+        private void InitData()
         {
             txtNhacungcap.Init();
             if (KIEU_THUOC_VT == "THUOC")

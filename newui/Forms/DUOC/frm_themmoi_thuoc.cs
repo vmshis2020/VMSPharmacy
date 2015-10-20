@@ -477,6 +477,7 @@ namespace VNS.HIS.UI.THUOC
                     txtDongiachia.Text = Utility.DecimaltoDbnull(objThuoc.DongiaChia, 0).ToString();
                     txtDonvichia.SetCode(objThuoc.MaDvichia);
                     chkChiathuoc.Checked = Utility.Byte2Bool(objThuoc.CoChiathuoc);
+                    chkSingle.Checked = Utility.Byte2Bool(objThuoc.SingleService);
                     LoadQheCamchidinhchung(objThuoc.IdThuoc);
                 }
                 GetSameCodeDrugList();
@@ -575,6 +576,7 @@ namespace VNS.HIS.UI.THUOC
                     txtSlVuottran.Text = "0";
                     txtPTTT.Clear();
                     optAll.Checked = true;
+                    chkSingle.Checked = false;
                     chkTutuc.Checked = false;
                     txtDesc.Clear();
                     //--------------------------------------------------------------
@@ -696,7 +698,7 @@ namespace VNS.HIS.UI.THUOC
                 objThuoc.MaDvichia = txtDonvichia.myCode;
                 objThuoc.SluongChia =(int) Utility.DecimaltoDbnull(txtSoluongchia.Text, 0);
                 objThuoc.DongiaChia = Utility.DecimaltoDbnull(txtDongiachia.Text, 0);
-
+                objThuoc.SingleService = Utility.Bool2byte(chkSingle.Checked);
                 objThuoc.TinhChat = Convert.ToByte(cboDrugNature.SelectedIndex);
                 objThuoc.HoatChat = Utility.sDbnull(txtActice.Text);
                 objThuoc.KieuThuocvattu = txtKieuthuocVT.myCode;
@@ -810,7 +812,7 @@ namespace VNS.HIS.UI.THUOC
             objThuoc.GioihanKedon = (Int16)Utility.DecimaltoDbnull(txtSoluong.Text, -1);
             objThuoc.DonviBut = (int)Utility.DecimaltoDbnull(txtBut.Text, -1);
             objThuoc.CachSudung = txtCachsudung.myCode;
-
+            objThuoc.SingleService = Utility.Bool2byte(chkSingle.Checked);
             objThuoc.CoChiathuoc = Utility.Bool2byte(chkChiathuoc.Checked);
             objThuoc.MaDvichia = txtDonvichia.myCode;
             objThuoc.SluongChia = (int)Utility.DecimaltoDbnull(txtSoluongchia.Text, 0);

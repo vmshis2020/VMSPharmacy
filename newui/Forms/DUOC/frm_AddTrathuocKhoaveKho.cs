@@ -104,7 +104,7 @@ namespace VNS.HIS.UI.THUOC
                 VNS.HIS.UI.Baocao.thuoc_phieuin_nhapxuat.InphieuXuatkho(IDPhieuNhap, "PHIẾU XUẤT", globalVariables.SysDate);
             }
         }
-        private void InitalData()
+        private void InitData()
         {
             m_KhoaTra = THU_VIEN_CHUNG.Laydanhmuckhoa("NOI",0);
             DataBinding.BindDataCombobox(cboNhanVien, CommonLoadDuoc.LAYTHONGTIN_NHANVIEN(),
@@ -185,7 +185,7 @@ namespace VNS.HIS.UI.THUOC
         }
         private void frm_AddTrathuocKhoaveKho_Load(object sender, EventArgs e)
         {
-            InitalData();
+            InitData();
             getData();
             ModifyCommand();
             b_Hasloaded = true;

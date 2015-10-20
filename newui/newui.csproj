@@ -344,6 +344,42 @@
     <Compile Include="Forms\Danhmuc\DMUC_KIEUDMUC.Designer.cs">
       <DependentUpon>DMUC_KIEUDMUC.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\DUOC\frm_PhieuXuatKho_Benhnhan_Noitru_Tututruc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DUOC\frm_PhieuXuatKho_Benhnhan_Noitru_Tututruc.Designer.cs">
+      <DependentUpon>frm_PhieuXuatKho_Benhnhan_Noitru_Tututruc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DUOC\frm_themmoi_phieuxuatkho_benhnhan_noitru_tututruc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DUOC\frm_themmoi_phieuxuatkho_benhnhan_noitru_tututruc.Designer.cs">
+      <DependentUpon>frm_themmoi_phieuxuatkho_benhnhan_noitru_tututruc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DUOC\frm_PhieuXuatKho_Benhnhan_Noitru.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DUOC\frm_PhieuXuatKho_Benhnhan_Noitru.Designer.cs">
+      <DependentUpon>frm_PhieuXuatKho_Benhnhan_Noitru.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DUOC\frm_themmoi_phieuxuatkho_benhnhan_noitru.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DUOC\frm_themmoi_phieuxuatkho_benhnhan_noitru.Designer.cs">
+      <DependentUpon>frm_themmoi_phieuxuatkho_benhnhan_noitru.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DUOC\frm_themmoi_phieuxuatkho_benhnhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DUOC\frm_themmoi_phieuxuatkho_benhnhan.Designer.cs">
+      <DependentUpon>frm_themmoi_phieuxuatkho_benhnhan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DUOC\frm_PhieuXuatKho_Benhnhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DUOC\frm_PhieuXuatKho_Benhnhan.Designer.cs">
+      <DependentUpon>frm_PhieuXuatKho_Benhnhan.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\DUOC\frm_NhaplydoHuy.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -615,6 +651,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Danhmuc\DMUC_KIEUDMUC.resx">
       <DependentUpon>DMUC_KIEUDMUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DUOC\frm_PhieuXuatKho_Benhnhan_Noitru_Tututruc.resx">
+      <DependentUpon>frm_PhieuXuatKho_Benhnhan_Noitru_Tututruc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DUOC\frm_themmoi_phieuxuatkho_benhnhan_noitru_tututruc.resx">
+      <DependentUpon>frm_themmoi_phieuxuatkho_benhnhan_noitru_tututruc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DUOC\frm_PhieuXuatKho_Benhnhan_Noitru.resx">
+      <DependentUpon>frm_PhieuXuatKho_Benhnhan_Noitru.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DUOC\frm_themmoi_phieuxuatkho_benhnhan_noitru.resx">
+      <DependentUpon>frm_themmoi_phieuxuatkho_benhnhan_noitru.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DUOC\frm_themmoi_phieuxuatkho_benhnhan.resx">
+      <DependentUpon>frm_themmoi_phieuxuatkho_benhnhan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DUOC\frm_PhieuXuatKho_Benhnhan.resx">
+      <DependentUpon>frm_PhieuXuatKho_Benhnhan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\DUOC\frm_NhaplydoHuy.resx">
       <DependentUpon>frm_NhaplydoHuy.cs</DependentUpon>

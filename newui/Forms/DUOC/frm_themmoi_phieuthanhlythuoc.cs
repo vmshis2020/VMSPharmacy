@@ -372,7 +372,7 @@ namespace VNS.HIS.UI.THUOC
             }
            
         }
-        private void InitalData()
+        private void InitData()
         {
             DataBinding.BindDataCombobox(cboNhanVien, CommonLoadDuoc.LAYTHONGTIN_NHANVIEN(),
                                       DmucNhanvien.Columns.IdNhanvien, DmucNhanvien.Columns.TenNhanvien, "---Nhân viên---",false);
@@ -431,7 +431,7 @@ namespace VNS.HIS.UI.THUOC
         {
             txtLydohuy.Init();
             txtDiadiem.Init();
-            InitalData();
+            InitData();
             getData();
             AutocompleteThuoc();
             ModifyCommand();
