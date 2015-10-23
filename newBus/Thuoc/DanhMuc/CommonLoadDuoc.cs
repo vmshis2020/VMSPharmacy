@@ -240,7 +240,7 @@ namespace VNS.Libs
           m_dtKhoThuoc = sqlQuery.ExecuteDataSet().Tables[0];
           return m_dtKhoThuoc;
       }
-      public static DataTable LAYTHONGTIN_KHOTHUOC_AO()
+      public static DataTable LAYTHONGTIN_KHOTHUOC_AO(bool noitru)
       {
           DataTable m_dtKhoThuoc = new DataTable();
           SqlQuery sqlQuery = new Select().From(TDmucKho.Schema);
@@ -259,7 +259,37 @@ namespace VNS.Libs
           }
           sqlQuery.And(TDmucKho.Columns.LaTuthuoc).IsEqualTo(0);
           sqlQuery.And(TDmucKho.Columns.LoaiKho).IsEqualTo(1);
-          sqlQuery.And(TDmucKho.Columns.LoaiBnhan).In(lstKhoNgoaitru);
+          if (noitru)
+              sqlQuery.And(TDmucKho.Columns.LoaiBnhan).In(lstKhoNoitru);
+          else
+              sqlQuery.And(TDmucKho.Columns.LoaiBnhan).In(lstKhoNgoaitru);
+          sqlQuery.OrderAsc(TDmucKho.Columns.SttHthi);
+          m_dtKhoThuoc = sqlQuery.ExecuteDataSet().Tables[0];
+          return m_dtKhoThuoc;
+      }
+      public static DataTable LAYTHONGTIN_KHOVATTU_AO(bool noitru)
+      {
+          DataTable m_dtKhoThuoc = new DataTable();
+          SqlQuery sqlQuery = new Select().From(TDmucKho.Schema);
+          if (!globalVariables.IsAdmin)
+          {
+              sqlQuery.Where(TDmucKho.Columns.IdKho).In(new Select(QheNhanvienKho.Columns.IdKho)
+                                                        .From(QheNhanvienKho.Schema).Where(QheNhanvienKho.Columns.IdNhanvien)
+                                                        .IsEqualTo(globalVariables.gv_intIDNhanvien));
+
+          }
+          if (sqlQuery.HasWhere)
+              sqlQuery.And(TDmucKho.Columns.KhoThuocVt).In(lstKhoVT);
+          else
+          {
+              sqlQuery.Where(TDmucKho.Columns.KhoThuocVt).In(lstKhoVT);
+          }
+          sqlQuery.And(TDmucKho.Columns.LaTuthuoc).IsEqualTo(0);
+          sqlQuery.And(TDmucKho.Columns.LoaiKho).IsEqualTo(1);
+          if (noitru)
+              sqlQuery.And(TDmucKho.Columns.LoaiBnhan).In(lstKhoNoitru);
+          else
+              sqlQuery.And(TDmucKho.Columns.LoaiBnhan).In(lstKhoNgoaitru);
           sqlQuery.OrderAsc(TDmucKho.Columns.SttHthi);
           m_dtKhoThuoc = sqlQuery.ExecuteDataSet().Tables[0];
           return m_dtKhoThuoc;
