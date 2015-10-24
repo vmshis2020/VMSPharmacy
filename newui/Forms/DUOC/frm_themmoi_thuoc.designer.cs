@@ -58,7 +58,6 @@
             this.txtSoluongchia = new MaskedTextBox.MaskedTextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.txtBut = new MaskedTextBox.MaskedTextBox();
-            this.txtDesc = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.txtSoluong = new MaskedTextBox.MaskedTextBox();
             this.chkTutuc = new Janus.Windows.EditControls.UICheckBox();
@@ -109,6 +108,7 @@
             this.chkThemlientuc = new Janus.Windows.EditControls.UICheckBox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.cmdNew = new Janus.Windows.EditControls.UIButton();
+            this.txtDesc = new System.Windows.Forms.TextBox();
             this.GroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdDmucthuoc)).BeginInit();
             this.pnlGia.SuspendLayout();
@@ -117,6 +117,7 @@
             // GroupBox1
             // 
             this.GroupBox1.BackColor = System.Drawing.SystemColors.Control;
+            this.GroupBox1.Controls.Add(this.txtDesc);
             this.GroupBox1.Controls.Add(this.txtMaQD40);
             this.GroupBox1.Controls.Add(this.txtMaQDTinh);
             this.GroupBox1.Controls.Add(this.label24);
@@ -143,7 +144,6 @@
             this.GroupBox1.Controls.Add(this.txtSoluongchia);
             this.GroupBox1.Controls.Add(this.label15);
             this.GroupBox1.Controls.Add(this.txtBut);
-            this.GroupBox1.Controls.Add(this.txtDesc);
             this.GroupBox1.Controls.Add(this.label14);
             this.GroupBox1.Controls.Add(this.txtSoluong);
             this.GroupBox1.Controls.Add(this.chkTutuc);
@@ -762,21 +762,6 @@
             this.txtBut.TabIndex = 21;
             this.txtBut.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // txtDesc
-            // 
-            this.txtDesc.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtDesc.BackColor = System.Drawing.Color.White;
-            this.txtDesc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtDesc.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDesc.Location = new System.Drawing.Point(112, 337);
-            this.txtDesc.MaxLength = 255;
-            this.txtDesc.Multiline = true;
-            this.txtDesc.Name = "txtDesc";
-            this.txtDesc.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtDesc.Size = new System.Drawing.Size(594, 60);
-            this.txtDesc.TabIndex = 25;
-            // 
             // label14
             // 
             this.label14.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -877,7 +862,7 @@
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(69, 15);
             this.label8.TabIndex = 430;
-            this.label8.Text = "TT-QĐ31";
+            this.label8.Text = "TT-QĐ40";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // lblMsg
@@ -1376,6 +1361,19 @@
             this.cmdNew.Text = "&Thêm mới";
             this.cmdNew.ToolTipText = "Nhấn vào đây để thêm mới Bệnh nhân";
             // 
+            // txtDesc
+            // 
+            this.txtDesc.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtDesc.BackColor = System.Drawing.Color.White;
+            this.txtDesc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtDesc.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDesc.Location = new System.Drawing.Point(112, 335);
+            this.txtDesc.MaxLength = 100;
+            this.txtDesc.Name = "txtDesc";
+            this.txtDesc.Size = new System.Drawing.Size(594, 21);
+            this.txtDesc.TabIndex = 25;
+            // 
             // frm_themmoi_thuoc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1457,7 +1455,6 @@
         private MaskedTextBox.MaskedTextBox txtSoluong;
         internal System.Windows.Forms.Label label15;
         private MaskedTextBox.MaskedTextBox txtBut;
-        internal System.Windows.Forms.TextBox txtDesc;
         private System.Windows.Forms.Label label20;
         private UCs.AutoCompleteTextbox_Danhmucchung txtDonvichia;
         private MaskedTextBox.MaskedTextBox txtDongiachia;
@@ -1486,5 +1483,6 @@
         private System.Windows.Forms.Panel pnlGia;
         private MaskedTextBox.MaskedTextBox txtGiaDV;
         internal System.Windows.Forms.Label label25;
+        internal System.Windows.Forms.TextBox txtDesc;
     }
 }

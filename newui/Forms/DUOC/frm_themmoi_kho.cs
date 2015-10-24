@@ -145,7 +145,7 @@ namespace VNS.HIS.UI.THUOC
                     QuanHeDoiTuongKho.THEM_DOITUONG_KHO(objdoituongkho);
                 }
                 Utility.ShowMsg("Bạn đã cập nhật dữ liệu thành công", "Thông báo", MessageBoxIcon.Information);
-                if (chkTrangThaiForm.Checked) this.Close();
+                 this.Close();
 
             }
             catch (Exception)

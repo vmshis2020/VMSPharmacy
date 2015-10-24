@@ -104,6 +104,7 @@ namespace VNS.HIS.UI.THUOC
              txtDongia.KeyPress += new KeyPressEventHandler( txtDongia_KeyPress);
             this.KeyDown += new KeyEventHandler(frm_themmoi_thuoc_KeyDown);
             txtName.LostFocus += new EventHandler(txtName_LostFocus);
+            txtName.TextChanged += txtName_TextChanged;
             txtActice.LostFocus += new EventHandler(txtActice_LostFocus);
             txtLoaithuoc._OnEnterMe += new VNS.HIS.UCs.AutoCompleteTextbox.OnEnterMe(txtLoaithuoc__OnEnterMe);
             txtDonvitinh._OnShowData += new UCs.AutoCompleteTextbox_Danhmucchung.OnShowData(txtDonvitinh__OnShowData);
@@ -116,6 +117,14 @@ namespace VNS.HIS.UI.THUOC
             txtDangBaoChe._OnShowData += txtDangBaoChe__OnShowData;
             txtKieuthuocVT._OnShowData += txtKieuthuocVT__OnShowData;
             cmdNew.Click += cmdNew_Click;
+        }
+
+        void txtName_TextChanged(object sender, EventArgs e)
+        {
+            if (m_enAction == action.Insert)
+            {
+
+            }
         }
 
         void txtKieuthuocVT__OnShowData()

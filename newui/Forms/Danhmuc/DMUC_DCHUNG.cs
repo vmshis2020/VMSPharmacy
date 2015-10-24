@@ -617,7 +617,7 @@ namespace VNS.HIS.UI.DANHMUC
 
                 if (!Utility.AcceptQuestion("Bạn có muốn xóa " + DeleteContent + " hay không?", "Xác nhận trước khi xóa danh mục", true)) return false;
                 //Thực hiện hành động xóa
-                m_BusRules.DeleteList(txtMa.Text.Trim(), ref ActResult);
+                m_BusRules.DeleteList(txtMa.Text.Trim(), m_strListType, ref ActResult);
                 if (ActResult == ActionResult.Success.ToString())
                 {
                     RemoveRowfromDataTable(txtMa.Text.Trim());

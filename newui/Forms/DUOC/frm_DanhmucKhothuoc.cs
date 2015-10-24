@@ -119,7 +119,7 @@ namespace VNS.HIS.UI.THUOC
         {
             
             m_dtKhoThuoc = CommonLoadDuoc.LAYTHONGTIN_KHOTHUOCVaTuThuoc();
-            Utility.SetDataSourceForDataGridEx(grdKhoThuoc,m_dtKhoThuoc,true,true,"1=1","");
+            Utility.SetDataSourceForDataGridEx(grdKhoThuoc, m_dtKhoThuoc, true, true, "1=1", TDmucKho.Columns.SttHthi + "," + TDmucKho.Columns.TenKho);
             ModifyCommand();
         }
         /// <summary>
