@@ -103,12 +103,14 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Thuoc\DanhMuc\QuanHeDoiTuongKho.cs" />
     <Compile Include="Thuoc\NhapKho\THUOC_NHAPKHO.cs" />
+    <Compile Include="Thuoc\Noitru\CapphatThuocKhoaAo.cs" />
     <Compile Include="Thuoc\Noitru\Trathuocthua.cs" />
     <Compile Include="Thuoc\Noitru\DuocNoitru.cs" />
     <Compile Include="Thuoc\Quaythuoc\Quaythuoc.cs" />
     <Compile Include="Thuoc\TraLaiKho\PhieuTraLai.cs" />
     <Compile Include="Thuoc\TraLaiKho\PhieuTralaiThuocKhoaVeKho.cs" />
     <Compile Include="Thuoc\Noitru\CapphatThuocKhoa.cs" />
+    <Compile Include="Thuoc\XuatThuoc\XuatThuocAo.cs" />
     <Compile Include="Thuoc\XuatThuoc\XuatThuoc.cs" />
   </ItemGroup>
   <ItemGroup>
