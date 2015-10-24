@@ -279,7 +279,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(135, 23);
             this.label6.TabIndex = 19;
-            this.label6.Text = "Khoa khám bệnh";
+            this.label6.Text = "Khoa phòng";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // frm_Login

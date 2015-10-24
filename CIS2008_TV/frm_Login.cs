@@ -136,6 +136,8 @@ namespace CIS.CoreApp
                                                DmucKhoaphong.Columns.MaKhoaphong, DmucKhoaphong.Columns.TenKhoaphong,
                                                "---Khoa làm việc---", false);
                     cboKhoaKCB.SelectedIndex = Utility.GetSelectedIndex(cboKhoaKCB, PropertyLib._AppProperties.Makhoathien);
+                    if (cboKhoaKCB.Items.Count == 1)
+                        cboKhoaKCB.SelectedIndex = 0;
                 }
             }
             catch (Exception ex)
@@ -242,12 +244,12 @@ namespace CIS.CoreApp
                 b_HasSuccess = true;
                 return false;
             }
-            if (cboKhoaKCB.Items.Count==0 || cboKhoaKCB.SelectedValue==null || cboKhoaKCB.SelectedValue.ToString() == "-1" || cboKhoaKCB.SelectedIndex < 0)
-            {
-                UIAction.SetTextStatus(lblMsg, "Bạn cần chọn khoa làm việc", true);
-                cboKhoaKCB.Focus();
-                return false;
-            }
+            //if (cboKhoaKCB.Items.Count==0 || cboKhoaKCB.SelectedValue==null || cboKhoaKCB.SelectedValue.ToString() == "-1" || cboKhoaKCB.SelectedIndex < 0)
+            //{
+            //    UIAction.SetTextStatus(lblMsg, "Bạn cần chọn khoa làm việc", true);
+            //    cboKhoaKCB.Focus();
+            //    return false;
+            //}
             PropertyLib._AppProperties.Makhoathien = Utility.sDbnull(cboKhoaKCB.SelectedValue, "KKB");
             globalVariables.MA_KHOA_THIEN = PropertyLib._AppProperties.Makhoathien;
             string UserName = Utility.sDbnull(Utility.GetPropertyValue(txtUserName, "Text"));

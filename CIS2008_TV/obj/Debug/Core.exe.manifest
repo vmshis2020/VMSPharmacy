@@ -4,7 +4,7 @@
   <description asmv2:iconFile="hospital.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="Core" version="1.0.5764.42940" language="neutral" processorArchitecture="msil" />
+    <assemblyIdentity name="Core" version="1.0.5771.42326" language="neutral" processorArchitecture="msil" />
     <commandLine file="Core.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -149,13 +149,13 @@
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Core.exe" size="353280">
-      <assemblyIdentity name="Core" version="1.0.5764.42940" language="neutral" processorArchitecture="msil" />
+      <assemblyIdentity name="Core" version="1.0.5771.42326" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>9QlXjzqrjnfQoCG4d1HdcNmYnE0=</dsig:DigestValue>
+        <dsig:DigestValue>CAKMS2Du1uhJ6O/cSoh2Tv3DpXs=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -568,26 +568,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="VNS.Bus.dll" size="116736">
-      <assemblyIdentity name="VNS.Bus" version="1.0.5764.42919" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="VNS.Bus.dll" size="135168">
+      <assemblyIdentity name="VNS.Bus" version="1.0.5771.41503" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>zrJqyH2PSrP7+zHEd1lEdSBsBqE=</dsig:DigestValue>
+        <dsig:DigestValue>9UZZedlzTTADUMNQ6vufI+WTcVk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="VNS.Dal.dll" size="689664">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="VNS.Dal.dll" size="696320">
       <assemblyIdentity name="VNS.Dal" version="1.0.1.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>PneuH96Zr4/h6T5dffFc7h/Etao=</dsig:DigestValue>
+        <dsig:DigestValue>+bf7pfVfi1+MXWeA3GmgXZ+IVXU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -599,19 +599,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>n09oMCgXI+yZoLULZu+jwnnR5kQ=</dsig:DigestValue>
+        <dsig:DigestValue>9InSkNjj/0pDM99OZFjZZgQFsCs=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="VNS.UCs.dll" size="138240">
-      <assemblyIdentity name="VNS.UCs" version="1.0.5764.42902" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="VNS.UCs.dll" size="130048">
+      <assemblyIdentity name="VNS.UCs" version="1.0.5771.39679" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>7eE067ZcMVAWHtthrzytYniq6Qo=</dsig:DigestValue>
+        <dsig:DigestValue>RTbXx69eXnbUvS1nsj9o1QtWGEc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -663,13 +663,13 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="Core.exe.config" size="1789">
+  <file name="Core.exe.config" size="1771">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>0ydps2QEn+qUJ2/TE+2zWaYoCxw=</dsig:DigestValue>
+      <dsig:DigestValue>IyRayJkwxnJTmFDAMYyF81jeZgE=</dsig:DigestValue>
     </hash>
   </file>
   <file name="hospital.ico" size="4286">

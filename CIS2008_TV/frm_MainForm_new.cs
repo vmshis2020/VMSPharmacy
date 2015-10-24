@@ -160,9 +160,9 @@ namespace CIS.CoreApp
 
         void lblDepartment_Click(object sender, EventArgs e)
         {
-            frm_ChuyenKhoaKCB _ChuyenKhoaKCB = new frm_ChuyenKhoaKCB();
-            _ChuyenKhoaKCB._OnChangedDepartment += new frm_ChuyenKhoaKCB.OnChangedDepartment(_ChuyenKhoaKCB__OnChangedDepartment);
-            _ChuyenKhoaKCB.ShowDialog();
+            //frm_ChuyenKhoaKCB _ChuyenKhoaKCB = new frm_ChuyenKhoaKCB();
+            //_ChuyenKhoaKCB._OnChangedDepartment += new frm_ChuyenKhoaKCB.OnChangedDepartment(_ChuyenKhoaKCB__OnChangedDepartment);
+            //_ChuyenKhoaKCB.ShowDialog();
 
         }
 
